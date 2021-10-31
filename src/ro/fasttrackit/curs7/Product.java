@@ -28,18 +28,9 @@ public class Product {
    }
 
    public boolean hasStock(){
-      if (quantity>0){
-         return true;
-      } else {
-         return false;
-      }
+     return quantity>0;
    }
    public boolean isCategory(String category){
-      if(this.category.equals(category)){
-         return true;
-      } else{
-         return false;
-      }
-
+      return this.category.equals(category);
    }
 }
